@@ -1,5 +1,5 @@
-# 8ings.github.io
+# ![logo](https://github.com/8ings/ifish/blob/master/pic/github.png)8ings.github.io
 ## GoGo!
 **A place to write my code!**
-![image](https://camo.githubusercontent.com/5b13f6f72f9dc61e7caab8a93455e0852c63e2a3/687474703a2f2f7364726469732e6769746875622e636f6d2f686f746669782f696d616765732f666f726b65722d77617463686572732e706e67)
+![image](https://github.com/8ings/ifish/blob/master/pic/8ings-github.png)
 ## 这里什么都没有...
