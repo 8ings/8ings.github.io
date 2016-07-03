@@ -1,3 +1,5 @@
-# <img src="http://img1.a.pcs.baidu.com/rest/2.0/pcs/thumbnail?method=generate&amp;path=%2F%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87%2Fgithub.png&amp;app_id=246327&amp;width=740&amp;height=490">8ings.github.io
-A place to write my code!
-![image](http://img7.a.pcs.baidu.com/rest/2.0/pcs/thumbnail?method=generate&amp;path=%2F%E6%88%91%E7%9A%84%E7%85%A7%E7%89%87%2F8ings-github.png&amp;app_id=246327&amp;width=740&amp;height=490)
+# 8ings.github.io
+## GoGo!
+**A place to write my code!**
+![image](https://camo.githubusercontent.com/5b13f6f72f9dc61e7caab8a93455e0852c63e2a3/687474703a2f2f7364726469732e6769746875622e636f6d2f686f746669782f696d616765732f666f726b65722d77617463686572732e706e67)
+## 这里什么都没有...
