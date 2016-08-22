@@ -1,0 +1,107 @@
+<!document html>
+<html>
+<head>
+<title>C#面向对象学习笔记(1)</title>
+</head>
+<body>
+<h4>1.	类</h4>
+<ul>
+<li>名称首字母要大些</li>
+<li>注意是否公开采用public、private等</li>
+</ul>
+<h4>2.	构造方法</h4>
+<ul>
+<li>对类进行初始化，名称与类名相同无返回值，也无void</li>
+</ul>
+<h4>3.	方法重载</h4>
+<ul>
+<li>同名方法，不同参数</li>
+</ul>
+<h4>4.	属性</h4>
+<ul>
+<li>属性是方法，但用起来像字段。属性有两个方法，set和get</li>
+</ul>
+<h4>5.	封装</h4>
+<ul>
+<li>减少耦合</li>
+<li>内部自由修改</li>
+<li>清晰对外接口</li>
+</ul>
+<h4>6.	继承</h4>
+<ul>
+<li>Is-a</li>
+<li>子类有父类非private属性和方法，域，事件</li>
+<li>构造方法不能继承，但可以用base关键字调用</li>
+<li>子类可以有自己的属性</li>
+<li>可以对父类方法重写</li>
+<li>Protected 子类可以对基类完全访问权限</li>
+</ul>
+<h4>7.	多态</h4>
+<ul>
+<li>父类用virtual修饰——虚方法</li>
+<li>子类用override修饰——方法重写</li>
+<li>不同对象以自己的方式执行相同动作</li>
+</ul>
+<h4>8.	抽象类</h4>
+<ul>
+<li>不能实例化</li>
+<li>抽象方法必须被子类重写</li>
+<li>有抽象方法则类也必须是抽象类</li>
+<li>抽象类应该最大化共同代码，最小化数据</li>
+<li>表示抽象的概念</li>
+<li>一个类只能继承一个抽象类</li>
+</ul>
+<h4>9.	接口</h4>
+<ul>
+<li>不包含成员的实现</li>
+<li>接口的成员需要实现类完全实现</li>
+<li>一个类可以实现多个接口</li>
+<li>类是对对象的抽象</li>
+<li>抽象类对类的抽象</li>
+<li>接口是对行为的抽象（不具体实现）</li>
+<li>如果行为跨越不同类的对象，则使用接口，对于相似的类对象，继承抽象类</li>
+<li>抽象类是从子类中总结归纳发现共同部分，泛化出父类，然后子类都来继承父类这一部分共同内容。自下而上。</li>
+<li>接口是不存在子类的情况下，先定义出有什么方法，然后再通过实现类慢慢实现。自上而下。</li>
+</ul>
+<h4>10.	集合</h4>
+<ul>
+<li>IList myArray（）;</li>
+<li>myArray = new ArrayList();</li>
+<li>数组在内存中连续，可以快速遍历，但定义时需要指定大小，不方便中间插入新元素</li>
+<li>System.Collections.ArrayList实现了IList接口。默认初始容量是0，使用索引可以访问集合中元素。</li>
+<li>Add（）</li>
+<li>RemoveAt（）</li>
+<li>Count（）</li>
+<li>类型不安全，且需要频繁装箱</li>
+</ul>
+<h4>11.	装箱与拆箱</h4>
+<ul>
+<li>值类型赋值给对象为装箱</li>
+<li>从对象中提取值类型为拆箱</li>
+<li>耗资源</li>
+</ul>
+<h4>12.	泛型</h4>
+<ul>
+<li>是具有占位符(类型参与)的类，结构，接口，方法。</li>
+<li>IList<类型> myArray;</li>
+<li>myArray = new List<类型>;</li>
+<li>类型安全，不需要装箱</li>
+</ul>
+<h4>13.	委托与事件</h4>
+<ul>
+<li>委托是对函数的封装，给方法的特征制定一个名称</li>
+<li>事件是委托的一种特殊形式，当发生事件时，事件对象要通知过程来处理。</li>
+<li>委托“引用方法”的“类型”，一旦分类方法，则委托与该方法具有相同的行为。</li>
+<li>delegate修饰委托，event修饰事件</li>
+<li>public delegate void XXXXEventHandler(); //声明委托</li>
+<li>public event XXXXEventHandler XXXX; //声明类型是委托的事件</li>
+<li>XXXX += new XXXXEventHandler(YYYY); //将YYYY实例化委托并登记到事件XXXX</li>
+<li>//</li>
+<li>public delegate void XXXXEventHandler(object sender,XXXXEventArgs args); //声明委托, </li>
+<li>sender为发送通知的对象，args包含了通知接受者需要附加的信息</li>
+<li>XXXXEventArgs e = new XXXXEventArgs(); //实例化</li>
+<li>E.name = this.name; //给name属性赋值</li>
+<li>XXXX(this, e); //当事件触发时，通知所有登记过的对象，讲sender及需要的数据args传递过去。</li>
+</ul>
+</body>
+</html>
